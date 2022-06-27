@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<script>
+var a="changed";
+//document.write(a.length);
+//document.write(16+"5");
+//document.write(5+"16");
+var a=5;
+var b=8;
+const person={first:"keerthi",last:"ka",fullname:function(){return this.first;}}
+
+document.write(a==b);
+// ***********************strings***********************************
+let y = new String("john");
+//typeof y
+document.write(y.slice(0,3));//(start,end) it extracts the part into new string too
+let part=y.slice(-3,0);//it can hve one param too (start) slices rest of string
+let part=y.substring(-1,2);//considers -ve as 0
+//y.substr(0,2);//(start,lenght)(-4): starts from end
+//let text1 = y.replace("ohn","oklahoma");//returns new string
+// let text4 = y.replace(/OHN/i,"oklahoma");
+//let text2 = y.toUpperCase();
+// let text3 = y.concat(" "+"hello");
+//let text3 = y.trim();
+/*
+let numb = 5;
+let text = numb.toString();
+let padded = text.padStart(4,"0");
+let padded = text.padEnd(4,"0");
+let char = text.charCodeAt(0);
+*/
+let text = "hello";
+const myarr = text.split("");
+text = ""
+for(let i=0; i<myarr.length; i++)
+{
+text += myarr[i]+"<br>"
+}
+// ********************* /string *******************************
+
+function myfunc()
+{
+document.getElementById("demo").innerHTML=var
+//alert(5+6);
+}
+</script>
+</head>
+<body>
+<p id="demo"></p>
+<button onclick='myfunc()'>click here!</button>
+<button onclick="this.innerHTML = Date()">The time is?</button>
+</body>
+</html>

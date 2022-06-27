@@ -1,0 +1,51 @@
+<!doctype html>
+<head>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+/*
+let str = "Please locate where 'locate' occurs!";
+document.write(str.indexOf("locate",2));//(string,start index)
+document.write(str.lastIndexOf("locate"));
+document.write(str.search("locate"));
+let text = "hello world";
+//text.match(/wher/gi);
+//text.includes("world",1); returns true or false
+//text.startsWith("Hello");
+//text.endsWith("Doe");
+//let text = `He's often called "Johnny"`;
+// **********formatting
+let firstName = "John";
+let price = 10;
+let text = `hello ${firstName} ${(price * (1+0.25)).toFixed(2)} `;
+let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
+
+let html = `<h2>${header}</h2><ul>`;
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+// *****************numbers
+let x = "100";
+let y = "10";
+let z = x + y;// converts strings into integers 
+let z = x/"hello" //returns NaN
+// converting into hexadecimal let x = 32; x.toString(16);
+*/
+let x = 9.656;
+document.getElementById("demo").innerHTML= x.toFixed(0) + "<br>" + x.toPrecision(2)+
+(100 + 23).valueOf()+ "<br>" +
+Number(new Date("2017-09-30"))+ "<br>" +
+parseInt("10.33")+ "<br>" +
+parseFloat("10.33")+ "<br>";
+/*
+let x = Number.MAX_VALUE;
+let x = 1 / 0;
+*/
+</script>
+
+</body>
+</html>
