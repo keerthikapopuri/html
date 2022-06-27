@@ -4,6 +4,7 @@
 </head>
 <body>
 <p id="demo"></p>
+ <button onclick="myFunction2()">Sort Numerically</button>
 <script>
 const cars = ["Saab", "Volvo", "BMW"];
 cars[1]="hynudai";
@@ -29,8 +30,23 @@ const myChildren = fruits.concat(myBoys);
 const points = [40, 100, 1, 5, 25, 10];
 // sorting accordingly of value
 function myFunction2() {
-  points.sort(function(a, b){return a - b});
+  points.sort(function(a, b){return a - b}
+  // now points[0] contains the lowest value
+// and points[points.length-1] contains the highest value 
+  // in random order return 0.5 - Math.random());
+  // descending return b-a
   document.getElementById("demo").innerHTML = points;
+}
+function myArrayMin(arr) {
+  //return Math.min.apply(null, arr);
+  let len = arr.length;
+  let min = Infinity;
+  while (len--) {
+    if (arr[len] < min) {
+      min = arr[len];
+    }
+  }
+  return min;
 }
 let text = "<ul>";
 fruits.forEach(myFunction);
