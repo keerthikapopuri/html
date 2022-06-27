@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+const cars = ["Saab", "Volvo", "BMW"];
+cars[1]="hynudai";
+cars.push("suzuki");
+document.write(cars.length);
+document.getElementById("demo").innerHTML = cars;
+const points = new Array(40);  //undefined error 
+/*
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+let text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("demo").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+}
+let type = typeof fruits; //returns object 
+Array.isArray(fruits);// return true same as fruits instanceof Array;
+
+*/
+</script>
+</body>
+</html>
