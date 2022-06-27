@@ -14,6 +14,24 @@ const points = new Array(40);  //undefined error
 /*
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
+let type = typeof fruits; //returns object 
+Array.isArray(fruits);// return true same as fruits instanceof Array;
+
+document.getElementById("demo").innerHTML = fruits.toString()+"<br>" +fruits.join(" * ")+"<br>";
+fruits.shift()+fruits.unshift("Lemon");
+fruits.pop();
+fruits.splice(2, 0, "Lemon", "Kiwi");// starting index and no of elements to be deleted 
+const citrus = fruits.slice(1, 3);
+fruits.reverse();
+delete fruits[0];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = fruits.concat(myBoys);
+const points = [40, 100, 1, 5, 25, 10];
+// sorting accordingly of value
+function myFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo").innerHTML = points;
+}
 let text = "<ul>";
 fruits.forEach(myFunction);
 text += "</ul>";
@@ -22,9 +40,6 @@ document.getElementById("demo").innerHTML = text;
 function myFunction(value) {
   text += "<li>" + value + "</li>";
 }
-let type = typeof fruits; //returns object 
-Array.isArray(fruits);// return true same as fruits instanceof Array;
-
 */
 </script>
 </body>
