@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* BOX MODEL */ 
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+body {
+  background-color: lightblue;
+  opacity: 0.9;
+/*
+  background-image: url("paper.gif");
+  background-repeat: no-repeat;
+  background-position: right top;
+background-attachment: scroll; or fixed
+background: #ffffff url("img_tree.png") no-repeat right top; ***********shorthand notation
+*/
+}
+/* 
+for external css
+<link rel="stylesheet" href="mystyle.css">
+* {
+  text-align: center;
+  color: blue;
+}
+*/
+p.center {
+  background-color:DodgerBlue;
+  max-width: 500px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  border:2px solid Tomato;
+  margin: 5px 5px 7px 10px;
+  padding: 2px 5px 5px 7px;
+  padding-left: 50%;
+}
+
+/* Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin */
+#para1 {
+  font-family: verdana;
+  font-size: 20px;
+}
+p.large {
+  font-size: 150%;
+}
+// outlines
+/*
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 15px;
+</style>
+</head>
+<body>
+
+<h1 class="center">My First CSS Example</h1>
+<p id="para1">This is a paragraph.</p>
+<p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p> 
+<p class="center">This paragraph will be red and center-aligned.</p> 
+<div>ullamco laboris nisi ut aliquip ex ea commodooccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</body>
+</html>
