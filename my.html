@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<style>
+input[type=text] ,input[type=email],input[type=password]{
+  border: none;
+  border-bottom: 2px solid black;
+}
+.button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.facebook {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+div.google{
+position:relative;
+left:50%;
+right:50%;
+bottom:50%;
+top:50%;
+}
+div.facebook{
+position:relative;
+left:100px;
+right:200px;
+bottom:200px;
+top:100px;
+}
+</style>
+</head>
+<body>
+<h1> Sign Up </h1>
+<br>
+<form>
+<input type="text" name="username" placeholder="Username" required>
+<br><br><br>
+<input type="email" name="Email" placeholder="email" required>
+<br><br><br>
+        <input type="password" name="password" placeholder="Password" required>
+<br><br><br>
+	<input type="password" name="Re type password" placeholder=" conform Password" required>
+<br><br><br>
+       <button class="button">Button</button>
+<br>
+</form>
+<div class="google">
+<button class="button">Login with google++</button>
+</div>
+<div class="facebook">
+<button class=" facebook">Login with Facebook</button>
+</div>
+</body>
+</html>
