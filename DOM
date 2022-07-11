@@ -118,6 +118,41 @@ COMMENT_NODE	8	<!-- This is a comment -->
 DOCUMENT_NODE	9	The HTML document itself (the parent of <html>)
 DOCUMENT_TYPE_NODE	10	<!Doctype html>
 
+// NODES **************************************
+const para = document.createElement("p");
+const node = document.createTextNode("This is new.");
+para.appendChild(node);
+const element = document.getElementById("div1");
+element.appendChild(para);
+
+const child = document.getElementById("p1");
+element.insertBefore(para,child);
+
+child.remove();
+
+parent.removeChild(child);
+
+parent.replaceChild(para, child);
+
+// Collections**********************
+const myCollection = document.getElementsByTagName("p");
+myCollection[1].innerHTML
+myCollection.length
+myCollection[i].style.color = "red" // IN loop 
+
+// NODE LISTS**********************
+
+An HTMLCollection is a collection of document elements.
+
+A NodeList is a collection of document nodes (element nodes, attribute nodes, and text nodes).
+
+HTMLCollection items can be accessed by their name, id, or index number.
+
+NodeList items can only be accessed by their index number.
+
+An HTMLCollection is always a live collection. Example: If you add a <li> element to a list in the DOM, the list in the HTMLCollection will also change.
+
+A NodeList is most often a static collection. Example: If you add a <li> element to a list in the DOM, the list in NodeList will not change.
 
 </script>
 
