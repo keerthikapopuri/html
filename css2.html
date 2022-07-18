@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+ul {
+  list-style-image: url('sqpurple.gif');
+ list-style-position: inside;
+list-style-type: upper-roman;
+background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+display: inline;
+#display: none; hides objvisibility: hidden;
+}
+#tables
+td
+{
+padding: 15px;
+  text-align: left;
+border-bottom: 1px solid #ddd;
+border-collapse: collapse;
+vertical-align: bottom;
+border: 1px solid black;
+}
+tr:hover {background-color: coral;}
+
+
+There are four different combinators in CSS:
+
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+
+div.sticky(just like paper stick notes at top of every scroll) {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+
+display: inline-block;#block,inline
+z-index:-1#can be positive too 
+overflow-x,-y:visible,hidden,scroll,auto;
+float: left,right,none;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.fixed(doesnt move while even scrolling) {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+div.static(goes with nrml flow) {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+#********positioning ********
+.container {
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+</style>
+</head>
+<body>
+
+<h1>Font Awesome icon library</h1>
+
+<p>Some Font Awesome icons:</p>
+<i class="fas fa-heart"></i>
+<i class="fas fa-bars"></i>
+
+<i class="fas fa-cloud" style="font-size:60px;color:lightblue;"></i>
+<span style="cursor:auto">auto</span><br>
+<span style="cursor:crosshair">crosshair</span><br>
+<span style="cursor:default">default</span><br>
+<span style="cursor:e-resize">e-resize</span><br>
+<span style="cursor:help">help</span><br>
+<span style="cursor:move">move</span><br>
+<span style="cursor:n-resize">n-resize</span><br>
+<span style="cursor:ne-resize">ne-resize</span><br>
+<span style="cursor:nw-resize">nw-resize</span><br>
+<span style="cursor:pointer">pointer</span><br>
+<span style="cursor:progress">progress</span><br>
+<span style="cursor:s-resize">s-resize</span><br>
+<span style="cursor:se-resize">se-resize</span><br>
+<span style="cursor:sw-resize">sw-resize</span><br>
+<span style="cursor:text">text</span><br>
+<span style="cursor:w-resize">w-resize</span><br>
+<span style="cursor:wait">wait</span><br>
+<div style="overflow-x: auto;">
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+    </tr>
+    </table>
+<div class="container">
+  <img src="img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300">
+  <div class="topleft">Top Left</div>
+</div>
+</body>
+</html>
+

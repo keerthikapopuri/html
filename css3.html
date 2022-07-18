@@ -1,0 +1,74 @@
+HOVERS WHEN CLICKED ON THE DIV ELEMENT
+<style>
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+} 
+div:hover p {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div>Hover over this div element to show the p element
+  <p>Tada! Here I am!</p>
+</div>
+
+</body>
+</html>
+****************************************************************************
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p i:first-child (FIRST element i only) p:first-child i(matches all elements){
+  color: blue;
+} 
+input:focus {
+  background-color: yellow;
+}
+input:invalid {
+  border: 2px solid red;
+}
+pseudo elements
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+p.intro::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+h1::before ,h1::before {
+  content: url(smiley.gif);
+}
+::marker { 
+  color: red;
+  font-size: 23px;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+// to get only underline
+border: none;
+  border-bottom: 2px solid red;
+}
+</style>
+</head>
+<body>
+
+<p>This is some text.</p>
+<p>This is some text.</p>
+
+<div>
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+</div>
+
+</body>
+</html>
+
